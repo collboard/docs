@@ -4,13 +4,12 @@
 
 ## 🔗 Important links
 
-- [🖋️ Collboard application](https://collboard.com/)
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [xxxxxxxxx]()
-- [Modules SDK](https://github.com/collboard/modules-sdk)
+- [🖋️ Whiteboard](https://collboard.com/)
+- [🛕 Principles](https://collboard.com/-/about/~/principles)
+- [🧑‍🤝‍🧑 Team](https://collboard.com/-/about/~/team)
+- [🖼️ Images](./images/)
+- [🎭 Presentations](./presentations)
+- [🎥 Videos](./videos/)
+- [📦 Modules SDK](https://github.com/collboard/modules-sdk)
+- [📭 Contact](https://collboard.com/-/about/~/contact)
 
