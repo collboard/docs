@@ -2,9 +2,9 @@
 
 [Collboard](https://collboard.com/) is an online shared whiteboard. This repository contains **public** documents, assets, screenshots and information for media.
 
-## Important links
+## 🔗 Important links
 
-- [Collboard application](https://collboard.com/)
+- [🖋️ Collboard application](https://collboard.com/)
 - [xxxxxxxxx]()
 - [xxxxxxxxx]()
 - [xxxxxxxxx]()
