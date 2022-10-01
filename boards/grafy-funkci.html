@@ -1,0 +1,292 @@
+
+<!--TODO: Export when design fixed-->
+<html lang="cs" dir="ltr" xmlns:collboard="https://xmlns.collboard.com/">
+    <head>
+        <meta charset="UTF-8" />
+        <meta collboard:import-with-module="@collboard/html-native-import" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grafy funkcí 🖋️ Collboard.com</title>
+        <!--
+            {
+                "isHeavyExport": true,
+                "quality": 0.92,
+                "scale": 1,
+                "isMaterialized": true,
+                "isLinked": false,
+                "isNative": true,
+                "isTransparent": true,
+                "isTesting": false,
+                "scope": "BOARD",
+                "mimeType": "text/html",
+                "boundingBox": {
+                    "transform": {
+                        "translate": {
+                            "x": 960,
+                            "y": 484.5,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    }
+                },
+                "boardname": "Grafy funkcí ",
+                "defaultFilename": "grafy-funkci.html"
+            }
+        -->
+        <link
+            rel="stylesheet"
+            href="data:text/css;base64,aHRtbCwKYm9keSB7CiAgICAvKiBOb3RlOiBUbyBkaXNhYmxlIHB1bGwtdG8tcmVmcmVzaCBvbiBkb3dubG9hZGVkIGh0bWwgKi8KICAgIG92ZXJzY3JvbGwtYmVoYXZpb3IteTogY29udGFpbjsKfQoKLmJyYW5kIHsKICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICAgIHBvc2l0aW9uOiBmaXhlZDsKICAgIHotaW5kZXg6IDEwMDsKICAgIGxlZnQ6IDE4cHg7CiAgICB0b3A6IDE1cHg7Cn0KLmJyYW5kIGltZyB7CiAgICB1c2VyLXNlbGVjdDogbm9uZTsKICAgIGhlaWdodDogMzVweDsKfQojYm9hcmQtd3JhcHBlciB7CiAgICBwb3NpdGlvbjogZml4ZWQ7CiAgICB6LWluZGV4OiA1MDsKICAgIGxlZnQ6IDA7CiAgICB0b3A6IDA7CiAgICBib3R0b206IDA7CiAgICByaWdodDogMDsKICAgIG92ZXJmbG93OiBoaWRkZW47CiAgICBjdXJzb3I6IGdyYWI7Cn0KCiNib2FyZCB7CiAgICBkaXNwbGF5OiBibG9jazsKfQoKI2JvYXJkLWJnIHsKICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICAgIHotaW5kZXg6IDA7CiAgICBsZWZ0OiAwOwogICAgdG9wOiAwOwogICAgcmlnaHQ6IDA7CiAgICBib3R0b206IDA7CgogICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0dHBzOi8vY29sbGJvYXJkLmZyYTEuY2RuLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vYXNzZXRzLzI3LjQwLjEvcGF0dGVybnMvZG90cy5zdmcpOwogICAgYmFja2dyb3VuZC1zaXplOiAzMHB4IDMwcHg7CiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogcmVwZWF0OwogICAgb3BhY2l0eTogMC4wNzsKfQoKI2JvYXJkIGltZyB7CiAgICB1c2VyLXNlbGVjdDogbm9uZTsKfQoKLmNvcm5lcnN0b25lIHsKICAgIGRpc3BsYXk6IGJsb2NrOwogICAgYm9yZGVyLXJhZGl1czogMTAwJTsKICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgIHdpZHRoOiA0cHg7CiAgICBoZWlnaHQ6IDRweDsKICAgIG1hcmdpbi1sZWZ0OiAtMnB4OwogICAgbWFyZ2luLXRvcDogLTJweDsKfQo="
+        />
+        <style></style>
+    </head>
+    <body>
+        <a href="https://collboard.com/" class="brand"
+            ><img
+                draggable="false"
+                src="data:image/png;base64,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"
+                alt="Collboard.com"
+        /></a>
+        <div id="board-bg"></div>
+        <div id="board-wrapper">
+            <main id="board" style="position:absolute;top:0;left:0">
+                <div class="cornerstone" data-collboard-art-id="cornerstone"></div>
+                <div
+                    data-collboard-art-id="3c9a7725-deb3-409e-9939-858f24388a4d"
+                    style="position:absolute;left:234.99999999999991px;top:-54.5px;width:209.99999999999997px;height:209.99999999999997px"
+                    collboard:art-materialization="material"
+                    collboard:art='{"__class":"FunctionBuilder","artId":"3c9a7725-deb3-409e-9939-858f24388a4d","shift":{"__class":"Vector","x":224.99999999999991,"y":-64.5,"z":8.396995275679222e-14},"locked":false,"opacity":null,"rotation":null,"defaultZIndex":5,"funct":"add","privateSize":{"x":230,"y":280,"z":0},"constant":null,"acceptedAttributes":[],"color":"#FDCC0F","connections":{"a":"ddce7a7e-88d6-488b-8b67-dda962457fd7","b":"1a176093-d766-4ae3-880a-7943da7e7e84"}}'
+                >
+                    <div>
+                        <div
+                            class="sc-fKFxtB hFeYaX block"
+                            style="width: 230px; height: 280px; position: absolute; left: 225px; top: -64.5px;"
+                        >
+                            <div class="functionTitle">
+                                <span><i>a</i> + <i>b</i></span>
+                            </div>
+                            <div class="inputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(247, 152, 14);"></div>
+                                    <div class="connectionTitle">Input<i>a </i></div>
+                                </div>
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(249, 102, 16);"></div>
+                                    <div class="connectionTitle">Input<i>b </i></div>
+                                </div>
+                            </div>
+                            <div class="outputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(253, 204, 15);"></div>
+                                    <div class="connectionTitle">Output</div>
+                                </div>
+                            </div>
+                            <div class="graphWrapper">
+                                <canvas
+                                    class="graph"
+                                    width="202"
+                                    height="166"
+                                    id="3c9a7725-deb3-409e-9939-858f24388a4d"
+                                ></canvas>
+                            </div>
+                            <svg
+                                class="sc-bBXrwG kIPlJQ"
+                                style="width: 445.938px; height: 188.266px; left: -413.937px; top: -2.5px;"
+                            >
+                                <path
+                                    d="M 30 158.26562500000003 C 222.96875 158.26562500000003 222.96875 30 415.9375 30"
+                                    style="stroke: rgb(247, 152, 14);"
+                                ></path></svg
+                            ><svg
+                                class="sc-bBXrwG kIPlJQ"
+                                style="width: 145px; height: 216.5px; left: -113px; top: 32.5px;"
+                            >
+                                <path
+                                    d="M 30 186.50000000000003 C 72.5 186.50000000000003 72.5 30 115 30"
+                                    style="stroke: rgb(249, 102, 16);"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-collboard-art-id="1a176093-d766-4ae3-880a-7943da7e7e84"
+                    style="position:absolute;left:-76px;top:119.5px;width:210px;height:210px"
+                    collboard:art-materialization="material"
+                    collboard:art='{"__class":"FunctionBuilder","artId":"1a176093-d766-4ae3-880a-7943da7e7e84","shift":{"__class":"Vector","x":-86,"y":109.5,"z":1.120861077822797e-13},"locked":false,"opacity":null,"rotation":null,"defaultZIndex":5,"funct":"abs","privateSize":{"x":230,"y":280,"z":0},"constant":null,"acceptedAttributes":[],"color":"#F96610","connections":{"a":"ddce7a7e-88d6-488b-8b67-dda962457fd7"}}'
+                >
+                    <div>
+                        <div
+                            class="sc-fKFxtB hFeYaX block"
+                            style="width: 230px; height: 280px; position: absolute; left: -86px; top: 109.5px;"
+                        >
+                            <div class="functionTitle"><span>abs(<i>a</i>)</span></div>
+                            <div class="inputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(247, 152, 14);"></div>
+                                    <div class="connectionTitle">Input<i>a </i></div>
+                                </div>
+                            </div>
+                            <div class="outputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(249, 102, 16);"></div>
+                                    <div class="connectionTitle">Output</div>
+                                </div>
+                            </div>
+                            <div class="graphWrapper">
+                                <canvas
+                                    class="graph"
+                                    width="202"
+                                    height="166"
+                                    id="1a176093-d766-4ae3-880a-7943da7e7e84"
+                                ></canvas>
+                            </div>
+                            <svg
+                                class="sc-bBXrwG kIPlJQ"
+                                style="width: 134.937px; height: 123.234px; left: -102.937px; top: -48.2344px;"
+                            >
+                                <path
+                                    d="M 30 30 C 67.46874999999999 30 67.46874999999999 93.23437499999997 104.93749999999997 93.23437499999997"
+                                    style="stroke: rgb(247, 152, 14);"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-collboard-art-id="ddce7a7e-88d6-488b-8b67-dda962457fd7"
+                    style="position:absolute;left:-376.93956628905926px;top:56.268794746092794px;width:210px;height:210px"
+                    collboard:art-materialization="material"
+                    collboard:art='{"__class":"FunctionBuilder","artId":"ddce7a7e-88d6-488b-8b67-dda962457fd7","shift":{"__class":"Vector","x":-386.93956628905926,"y":46.268794746092794,"z":9.853346696067264e-14},"locked":false,"opacity":null,"rotation":null,"defaultZIndex":5,"funct":"asin","privateSize":{"x":230,"y":280,"z":0},"constant":null,"acceptedAttributes":[],"color":"#F7980E","connections":{"a":"993fe480-ed4e-4504-adb4-02b3503e44b3"}}'
+                >
+                    <div>
+                        <div
+                            class="sc-fKFxtB hFeYaX block"
+                            style="width: 230px; height: 280px; position: absolute; left: -386.94px; top: 46.2688px;"
+                        >
+                            <div class="functionTitle"><span>sin<sup>-1</sup>(<i>a</i>)</span></div>
+                            <div class="inputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(16, 51, 102);"></div>
+                                    <div class="connectionTitle">Input<i>a </i></div>
+                                </div>
+                            </div>
+                            <div class="outputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(247, 152, 14);"></div>
+                                    <div class="connectionTitle">Output</div>
+                                </div>
+                            </div>
+                            <div class="graphWrapper">
+                                <canvas
+                                    class="graph"
+                                    width="202"
+                                    height="166"
+                                    id="ddce7a7e-88d6-488b-8b67-dda962457fd7"
+                                ></canvas>
+                            </div>
+                            <svg
+                                class="sc-bBXrwG kIPlJQ"
+                                style="width: 147.609px; height: 178.844px; left: -115.607px; top: -103.847px;"
+                            >
+                                <path
+                                    d="M 30 30 C 73.80468749999997 30 73.80468749999997 148.84375000000003 117.60937499999994 148.84375000000003"
+                                    style="stroke: rgb(16, 51, 102);"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-collboard-art-id="993fe480-ed4e-4504-adb4-02b3503e44b3"
+                    style="position:absolute;left:-690.5551732421876px;top:-62.58367117187501px;width:210px;height:210px"
+                    collboard:art-materialization="material"
+                    collboard:art='{"__class":"FunctionBuilder","artId":"993fe480-ed4e-4504-adb4-02b3503e44b3","shift":{"__class":"Vector","x":-700.5551732421876,"y":-72.58367117187501,"z":1.5876262378070922e-13},"locked":false,"opacity":null,"rotation":null,"defaultZIndex":5,"funct":"cos","privateSize":{"x":230,"y":280,"z":0},"constant":null,"acceptedAttributes":[],"color":"#103366","connections":{"a":"056cc447-6806-41be-8664-91517a449c6b"}}'
+                >
+                    <div>
+                        <div
+                            class="sc-fKFxtB hFeYaX block"
+                            style="width: 230px; height: 280px; position: absolute; left: -700.555px; top: -72.5837px;"
+                        >
+                            <div class="functionTitle"><span>cos(<i>a</i>)</span></div>
+                            <div class="inputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(152, 207, 25);"></div>
+                                    <div class="connectionTitle">Input<i>a </i></div>
+                                </div>
+                            </div>
+                            <div class="outputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(16, 51, 102);"></div>
+                                    <div class="connectionTitle">Output</div>
+                                </div>
+                            </div>
+                            <div class="graphWrapper">
+                                <canvas
+                                    class="graph"
+                                    width="202"
+                                    height="166"
+                                    id="993fe480-ed4e-4504-adb4-02b3503e44b3"
+                                ></canvas>
+                            </div>
+                            <svg
+                                class="sc-bBXrwG kIPlJQ"
+                                style="width: 146.797px; height: 145.609px; left: -114.789px; top: -70.6038px;"
+                            >
+                                <path
+                                    d="M 30 30 C 73.3984375 30 73.3984375 115.60937499999972 116.796875 115.60937499999972"
+                                    style="stroke: rgb(152, 207, 25);"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    data-collboard-art-id="056cc447-6806-41be-8664-91517a449c6b"
+                    style="position:absolute;left:-1003.3478430859376px;top:-148.1897319531252px;width:210px;height:210px"
+                    collboard:art-materialization="material"
+                    collboard:art='{"__class":"FunctionBuilder","artId":"056cc447-6806-41be-8664-91517a449c6b","shift":{"__class":"Vector","x":-1013.3478430859376,"y":-158.1897319531252,"z":1.0415506014145745e-13},"locked":false,"opacity":null,"rotation":null,"defaultZIndex":5,"funct":"x","privateSize":{"x":230,"y":280,"z":0},"constant":null,"acceptedAttributes":[],"color":"#98CF19","connections":{}}'
+                >
+                    <div>
+                        <div
+                            class="sc-fKFxtB hFeYaX block"
+                            style="width: 230px; height: 280px; position: absolute; left: -1013.35px; top: -158.19px;"
+                        >
+                            <div class="functionTitle"><span>x</span></div>
+                            <div class="inputs"></div>
+                            <div class="outputs">
+                                <div class="connection">
+                                    <div class="connectionPoint" style="background: rgb(152, 207, 25);"></div>
+                                    <div class="connectionTitle">Output</div>
+                                </div>
+                            </div>
+                            <div class="graphWrapper">
+                                <canvas
+                                    class="graph"
+                                    width="202"
+                                    height="166"
+                                    id="056cc447-6806-41be-8664-91517a449c6b"
+                                ></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="data:application/javascript;base64,Ly8g8J+ThCBGaWxlIGV4cG9ydC10ZW1wbGF0ZS5qcwovLyBOb3RlOiBVc2luZyBoZXJlIGxlZ2FjeSB2YW5pbGxhIEpTIHRvIGtlZXAgYXMgd2lkZWx5IGNvbXBhdGlibGUgYXMgcG9zc2libGUuCgpmdW5jdGlvbiBhZGRCb2FyZEludGVyYWN0aXZpdHkob3B0aW9ucykgewogICAgdmFyIGFydElkID0gb3B0aW9ucy5hcnRJZDsKICAgIHZhciBib2FyZEVsZW1lbnQgPSBvcHRpb25zLmJvYXJkRWxlbWVudDsKICAgIHZhciBsZWFkaW5nRWxlbWVudCA9IG9wdGlvbnMubGVhZGluZ0VsZW1lbnQ7CiAgICB2YXIgYmFja2dyb3VuZEVsZW1lbnQgPSBvcHRpb25zLmJhY2tncm91bmRFbGVtZW50OwoKICAgIHZhciBheCA9IDA7CiAgICB2YXIgYXkgPSAwOwogICAgdmFyIGJ4ID0gMDsKICAgIHZhciBieSA9IDA7CgogICAgdmFyIGlzRHJhZ2dpbmcgPSBmYWxzZTsKCiAgICAvLyBOb3RlOiBwb2ludGVyIGV2ZW50cyBhcmUgbm90IGVub3VnaCB0byBmdWxseSB3b3JrIG9uIHRvdWNoIGRldmljZXMKICAgIGxlYWRpbmdFbGVtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ3BvaW50ZXJkb3duJywgaGFuZGxlRHJhZ1N0YXJ0KTsKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdwb2ludGVydXAnLCBoYW5kbGVEcmFnRW5kKTsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ21vdXNlbW92ZScsIGhhbmRsZURyYWdNb3ZlKTsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ3RvdWNobW92ZScsIGhhbmRsZURyYWdNb3ZlKTsKCiAgICBmdW5jdGlvbiBtb3ZlQm9hcmRUbyh4LCB5KSB7CiAgICAgICAgYm9hcmRFbGVtZW50LnN0eWxlLmxlZnQgPSAteCArIHdpbmRvdy5pbm5lcldpZHRoIC8gMiArICdweCc7CiAgICAgICAgYm9hcmRFbGVtZW50LnN0eWxlLnRvcCA9IC15ICsgd2luZG93LmlubmVySGVpZ2h0IC8gMiArICdweCc7CiAgICAgICAgc3luY0JhY2tncm91bmQoKTsKICAgIH0KCiAgICBmdW5jdGlvbiBtb3ZlQm9hcmRCeSh4LCB5KSB7CiAgICAgICAgYm9hcmRFbGVtZW50LnN0eWxlLmxlZnQgPSBib2FyZEVsZW1lbnQub2Zmc2V0TGVmdCAtIHggKyAncHgnOwogICAgICAgIGJvYXJkRWxlbWVudC5zdHlsZS50b3AgPSBib2FyZEVsZW1lbnQub2Zmc2V0VG9wIC0geSArICdweCc7CiAgICAgICAgc3luY0JhY2tncm91bmQoKTsKICAgIH0KCiAgICBmdW5jdGlvbiBzeW5jQmFja2dyb3VuZCh4LCB5KSB7CiAgICAgICAgYmFja2dyb3VuZEVsZW1lbnQuc3R5bGUuYmFja2dyb3VuZFBvc2l0aW9uID0KICAgICAgICAgICAgJycgKyAoKGJvYXJkRWxlbWVudC5vZmZzZXRMZWZ0ICUgMzApIC0gMTUpICsgJ3B4ICcgKyAoKGJvYXJkRWxlbWVudC5vZmZzZXRUb3AgJSAzMCkgLSAxNSkgKyAncHgnOwogICAgfQoKICAgIGZ1bmN0aW9uIGhhbmRsZURyYWdTdGFydChldmVudCkgewogICAgICAgIGlzRHJhZ2dpbmcgPSB0cnVlOwoKICAgICAgICBieCA9IGV2ZW50LmNsaWVudFg7CiAgICAgICAgYnkgPSBldmVudC5jbGllbnRZOwogICAgfQoKICAgIGZ1bmN0aW9uIGhhbmRsZURyYWdNb3ZlKGV2ZW50KSB7CiAgICAgICAgaWYgKCFpc0RyYWdnaW5nKSB7CiAgICAgICAgICAgIHJldHVybjsKICAgICAgICB9CgogICAgICAgIHZhciB4ID0gZXZlbnQuY2xpZW50WCB8fCBldmVudC50b3VjaGVzWzBdLmNsaWVudFg7CiAgICAgICAgdmFyIHkgPSBldmVudC5jbGllbnRZIHx8IGV2ZW50LnRvdWNoZXNbMF0uY2xpZW50WTsKCiAgICAgICAgYXggPSBieCAtIHg7CiAgICAgICAgYXkgPSBieSAtIHk7CiAgICAgICAgYnggPSB4OwogICAgICAgIGJ5ID0geTsKCiAgICAgICAgbW92ZUJvYXJkQnkoYXgsIGF5KTsKICAgIH0KCiAgICBmdW5jdGlvbiBoYW5kbGVEcmFnRW5kKCkgewogICAgICAgIGlzRHJhZ2dpbmcgPSBmYWxzZTsKICAgIH0KCiAgICBsZWFkaW5nRWxlbWVudC5hZGRFdmVudExpc3RlbmVyKCd3aGVlbCcsIChldmVudCkgPT4gewogICAgICAgIGlmIChldmVudC5jdHJsS2V5KSB7CiAgICAgICAgICAgIHJldHVybjsKICAgICAgICAgICAgLy8gVE9ETzogWm9vbSBIRVJFIGJ5IEN0cmwrV2hlZWwgLSBOb3cgaXQgaXMganVzdCBzaW1wbGUgYnJvd3NlciB6b29tCiAgICAgICAgfQoKICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOwogICAgICAgIG1vdmVCb2FyZEJ5KE1hdGguc2lnbihldmVudC5kZWx0YVgpICogMjUsIE1hdGguc2lnbihldmVudC5kZWx0YVkpICogMjUpOwogICAgfSk7CgogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigna2V5ZG93bicsIChldmVudCkgPT4gewogICAgICAgIHZhciBzdGVwID0gMTA7CiAgICAgICAgaWYgKGV2ZW50LmN0cmxLZXkpIHsKICAgICAgICAgICAgc3RlcCA9IDEwMDsKICAgICAgICB9IGVsc2UgaWYgKGV2ZW50LnNoaWZ0S2V5KSB7CiAgICAgICAgICAgIHN0ZXAgPSAxOwogICAgICAgIH0KCiAgICAgICAgaWYgKGV2ZW50LmtleSA9PT0gJ0Fycm93TGVmdCcpIHsKICAgICAgICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTsKICAgICAgICAgICAgbW92ZUJvYXJkQnkoLXN0ZXAsIDApOwogICAgICAgIH0KICAgICAgICBpZiAoZXZlbnQuY29kZSA9PT0gJ0Fycm93UmlnaHQnKSB7CiAgICAgICAgICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7CiAgICAgICAgICAgIG1vdmVCb2FyZEJ5KHN0ZXAsIDApOwogICAgICAgIH0KICAgICAgICBpZiAoZXZlbnQuY29kZSA9PT0gJ0Fycm93VXAnKSB7CiAgICAgICAgICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7CiAgICAgICAgICAgIG1vdmVCb2FyZEJ5KDAsIC1zdGVwKTsKICAgICAgICB9CiAgICAgICAgaWYgKGV2ZW50LmNvZGUgPT09ICdBcnJvd0Rvd24nKSB7CiAgICAgICAgICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7CiAgICAgICAgICAgIG1vdmVCb2FyZEJ5KDAsIHN0ZXApOwogICAgICAgIH0KICAgIH0pOwoKICAgIGlmIChhcnRJZCkgewogICAgICAgIHZhciBhcnRFbGVtZW50ID0gYm9hcmRFbGVtZW50LnF1ZXJ5U2VsZWN0b3IoIipbZGF0YS1jb2xsYm9hcmQtYXJ0LWlkPSciICsgYXJ0SWQgKyAiJ10iKTsKICAgICAgICB2YXIgYXJ0Qm94ID0gYXJ0RWxlbWVudC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKTsKICAgICAgICB2YXIgeCA9IGFydEJveC54ICsgYXJ0Qm94LndpZHRoIC8gMjsKICAgICAgICB2YXIgeSA9IGFydEJveC55ICsgYXJ0Qm94LmhlaWdodCAvIDI7CiAgICAgICAgbW92ZUJvYXJkVG8oeCwgeSk7CiAgICB9CgogICAgLy8gVE9ETzogW/Cfk5VdIEtlZXAgY2VudGVyaW5nIG9uIHdpbmRvdyBzaXplIGNoYW5nZSAtIHZpYSBwYXNpdmUgY3NzIE9SIHZpYSBhY3RpdmUgSlMKfQoKLyoqCiAqIFRPRE86IEZyYW1lIGFuY2hvcnMgLSBzbW9vdGggZmx5YXdheQogKi8K"></script>
+        <script>
+            <!--
+
+                                                addBoardInteractivity({
+                                                    artId: 'cornerstone' /* <- TODO: Use here scope of the export */,
+                                                    boardElement: document.querySelector('#board'),
+                                                    leadingElement: document.querySelector('#board-wrapper'),
+                                                    backgroundElement: document.querySelector('#board-bg'),
+                                                });
+
+            //-->
+        </script>
+    </body>
+</html>
